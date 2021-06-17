@@ -170,7 +170,7 @@ class LocationsMapViewController: UIViewController {
         AirportsManager.sharedInstance.getAirports(radius: self.valueRadius, longitude: self.longitude, latitude: self.latitude, success: { (response) -> Void in
             
             DispatchQueue.main.async {
-                //self._HUD.dismiss(animated: true)
+                self._HUD.dismiss(animated: true)
                 
                 let data = response.items
                 
